@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Mirror – ENGR 696/697 Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background: #f7f7f7; color: #222; }
+    header { background: #222; color: #fff; padding: 2rem 1rem; text-align: center; }
+    nav { background: #333; text-align: center; }
+    nav a { color: #fff; text-decoration: none; margin: 0 1.5rem; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    section { max-width: 900px; margin: 2rem auto; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #0001; padding: 2rem; }
+    h2 { color: #0057b8; }
+    .diagram, .photo { text-align: center; margin: 2rem 0; }
+    .team { display: flex; gap: 2rem; flex-wrap: wrap; }
+    .member { flex: 1 1 200px; text-align: center; }
+    .member img { width: 80px; border-radius: 50%; }
+    footer { background: #222; color: #fff; text-align: center; padding: 1rem; margin-top: 2rem; }
+    @media (max-width: 700px) {
+      .team { flex-direction: column; align-items: center; }
+      section { padding: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Smart Mirror Project</h1>
+    <p>ENGR 696/697 – San Francisco State University</p>
+  </header>
+  <nav>
+    <a href="#description">Project Description</a>
+    <a href="#background">Background</a>
+    <a href="#design">Design Considerations</a>
+    <a href="#results">Results</a>
+    <a href="#discussion">Discussion & Conclusion</a>
+    <a href="#team">Team</a>
+  </nav>
+
+  <section id="description">
+    <h2>Project Description</h2>
+    <div class="photo">
+      <img src="SmartMirror.PNG">
+    </div>
+    <p>
+      <strong>Modular Smart Mirror with Reflective Display and Voice-Controlled Interface</strong><br>
+      The Smart Mirror looks just like a regular mirror, but contains a hidden screen that displays valuable information such as time, weather, calendar, and news. Crafted from a special two-way reflective material, it reflects your face while also allowing light from the display to pass through. Powered by a Raspberry Pi, the mirror updates information in real-time from the internet and can include features like motion activation and voice commands for hands-free use.
+    </p>
+    <p>
+      <em>This project was created as part of a two-term senior design course sequence in Computer Engineering at San Francisco State University in Spring 2025.</em>
+    </p>
+  </section>
+
+  <section id="background">
+    <h2>Background</h2>
+    <p>
+      The objective of this project was to create an interactive, modular smart mirror that enhances daily routines by providing real-time information in a seamless, hands-free way. The problem addressed is the lack of unobtrusive, always-available information displays in the home. While smart displays exist, few combine the utility of a mirror with the power of IoT and voice control. Our approach uses a high-transmission two-way mirror, a slim display, and open-source software to create a device that is both functional and aesthetically pleasing. This project serves tech-savvy homeowners and anyone interested in smart home innovation, offering a customizable, expandable platform for future features.
+    </p>
+  </section>
+
+  <section id="design">
+    <h2>Design Considerations</h2>
+    <p>
+      We explored several design options, from simple off-the-shelf frames to fully custom woodwork. The final design uses a slim 15.6" display behind an A3-sized two-way acrylic mirror, with a Raspberry Pi 3A+ running MagicMirror². We chose open-source software for flexibility and cost-effectiveness, and modular hardware for easy upgrades. Practical considerations included keeping the total cost under $300, ensuring safe wall-mounting, and maintaining reliable, headless operation. Tradeoffs included balancing display brightness with mirror reflectivity and choosing between acrylic and glass for the mirror. Experiments with different frame materials and light isolation techniques led to a clear, readable display without sacrificing mirror quality.
+    </p>
+  </section>
+
+  <section id="results">
+    <h2>Results</h2>
+    <div class="diagram">
+      <img src="LayerStackDiagram.png">
+    </div>
+    <p>
+      The completed Smart Mirror system integrates a Raspberry Pi, slim display, two-way mirror, and optional sensors (motion, audio) in a compact, wall-mountable frame. The MagicMirror² software displays time, weather, calendar, and news modules, with planned extensions for voice and face recognition. The system was tested for display clarity in various lighting, Wi-Fi stability, and boot time. The mirror maintains high reflectivity while clearly showing digital content. The total build cost was under $300.
+    </p>
+    <h3>System Overview</h3>
+    <ul>
+      <li><strong>Hardware:</strong> Raspberry Pi 3A+, 15.6" display, A3 two-way mirror, PIR sensor (optional), speakers (optional)</li>
+      <li><strong>Software:</strong> Raspberry Pi OS Lite, MagicMirror², PM2, Node.js, optional modules for remote control and voice assistant</li>
+    </ul>
+    <h3>Budget</h3>
+    <ul>
+      <li>Raspberry Pi 3A+: $50</li>
+      <li>15.6" Display: $100</li>
+      <li>Two-way Mirror: $60</li>
+      <li>Frame & Materials: $40</li>
+      <li>Misc. Electronics: $30</li>
+      <li><strong>Total:</strong> ~$280</li>
+    </ul>
+  </section>
+
+  <section id="discussion">
+    <h2>Discussion and Conclusion</h2>
+    <p>
+      <strong>What worked:</strong> .
+    </p>
+    <p>
+      <strong>What didn’t:</strong> .
+    </p>
+    <p>
+      <strong>Improvements:</strong> .
+    </p>
+    <p>
+      <strong>Tradeoffs:</strong> .
+    </p>
+    <p>
+      <strong>Comparison:</strong> .
+    </p>
+    <p>
+      <strong>Societal/Ethical:</strong> .
+    </p>
+    <p>
+      <strong>Conclusion:</strong> The Smart Mirror is a scalable, innovative project that demonstrates embedded systems, modular software, and user-centered design—aligned with ENGR 696/697 learning goals.
+    </p>
+  </section>
+
+  <section id="team">
+    <h2>Team Members & Bios</h2>
+    <div class="team">
+      <div class="member">
+        <img src="https://img.icons8.com/ios-filled/100/user-male-circle.png" alt="Eduardo">
+        <p><strong>Eduardo Ruiz</strong><br>Lead Hardware Engineer<br>
+        <em>Eduardo designed and assembled the hardware, including the frame, electronics, and integration of sensors.</em></p>
+      </div>
+      <div class="member">
+        <img src="https://img.icons8.com/ios-filled/100/user-female-circle.png" alt="Diana">
+        <p><strong>Diana Lazarte</strong><br>Lead Software Engineer<br>
+        <em>Diana developed the software stack, configured MagicMirror², and implemented the modular interface.</em></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Smart Mirror Project | ENGR 696/697 – SFSU
+  </footer>
+</body>
+</html>
